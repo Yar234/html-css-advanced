@@ -1,0 +1,162 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+    .header__checkbox:checked ~ .mobile-menu {
+        transform: scale(1);
+    }
+    .mobile-menu {
+        transform: scale(0);
+    }
+    .promo {
+        &__info {
+            margin-top: 0;
+        }
+        &__content {
+            display: flex;
+            align-items: center;
+            padding-left: 39px;
+        }
+        &__title {
+            font-size: 44px;
+            line-height: 53px;
+        }
+        &__heading {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+    .sale {
+        gap: 19px;
+        &__item {
+            &_big {
+                min-height: 116px;
+            }
+        }
+    }
+    .slot {
+        &__text {
+            margin-bottom: 72px;
+        }
+        &__button {
+            margin-top: 32px;
+            margin-bottom: 64px;
+        }
+    }
+    .picture__grid {
+        gap: 16px;
+    }
+    .footer {
+        &__top {
+            flex-direction: column;
+            min-height: 610px;
+            justify-content: center;
+            gap: 48px;
+            padding-bottom: 64px;
+        }
+        &__center {
+            flex-direction: column;
+            justify-content: center;
+            min-height: 614px;
+        }
+    }
+    .person {
+        &__img {
+            margin-top: 53px;
+            margin-bottom: 48px;
+        }
+        &__info {
+            margin-bottom: 48px;
+        }
+    }
+    .subscribe__block_header {
+        margin-bottom: 28px;
+    }
+    .input {
+        margin-bottom: 140px;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 260px);
+        padding-right: calc(50% - 260px);
+    }
+    .mobile-menu {
+        width: 100%;
+        right: -100%;
+        &__link-site {
+            display: flex;
+        }
+    }
+    .header {
+        &__checkbox:checked ~ .mobile-menu {
+            right: 0;
+        }
+        &__link-site {
+            display: none;
+        }
+    }
+    .promo {
+        &__img {
+            display: none;
+        }
+        &__content {
+            min-height: 363px;
+            padding-left: 0;
+            width: 100%;
+            justify-content: center;
+        }
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        &__heading {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    .sale {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+        &__item img {
+            width: 100%;
+        }
+        &__item {
+            &_big {
+                min-height: 111px;
+                background-image: url(img/sibig.jpg);
+                background-size: cover;
+                background-position: center;
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+    .product-box {
+        &__content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .product {
+        &__add {
+            top: 30%;
+            left: 33%;
+        }
+    }
+    .footer {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding-top: 42px;
+        padding-bottom: 9px;
+    }
+}
+@media (max-width: 525px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
